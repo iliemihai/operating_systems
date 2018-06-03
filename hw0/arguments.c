@@ -3,8 +3,8 @@
 
 int main(int argc, char *argv[]) {
     // TODO: Print the program name
-    printf("Program name: %s\n", "REPLACE THIS");
-    
+    printf("Program name: %s\n", argv[0]);
+    int i;
     printf("Arguments: ");
     // TODO: Print all the arguments given to the program.
     //
@@ -13,7 +13,13 @@ int main(int argc, char *argv[]) {
     //
     //       Print "NONE" if no arguments are present.
     /*COMPLETE HERE*/
-    printf("\n");
+    if (argc > 1) {
+        for (i=1; i<argc; i++)
+            printf("%s ", argv[i]);
+        printf("\n");
+    } else {
+        printf("None\n"); 
+    }
 
     return 0;
 }

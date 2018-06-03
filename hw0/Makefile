@@ -1,4 +1,4 @@
-all: hello_world 
+all: wc hello_world arguments
 
 hello_world: hello_world.c
 	gcc hello_world.c -Wall -Wextra -pedantic -o hello_world
